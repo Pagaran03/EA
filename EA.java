@@ -1,10 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package ecommerce.ea;
 import java.util.*;
+
+/* Members:
+ *   Marquita, Brecht
+ *   Pagaran, Feliciano Sherdy E.
+ *   Canoy, Beverly
+ *
+ *  Date:
+ *   October 21,2022
+ *
+ *  Title of the Project:
+ *n
+Ecommerce Website
+*/
 
 public class EA {
     
@@ -56,7 +64,7 @@ public class EA {
         }
         else
         {
-            System.out.println("Password Not The Same\n Try Again...");
+            System.out.println("Password Not The Same... Try Again...");
             addUser();
         }
         return users;
@@ -90,10 +98,10 @@ public class EA {
                 CurrentSession();
                 Homepage();
             }
-            else if(!users.getUSERNAME().equals(loginUser) && !users.getPASSWORD().equals(loginPass))
+            else //if(!users.getUSERNAME().equals(loginUser) && !users.getPASSWORD().equals(loginPass))
             {
-                System.out.println("           INVALID CREDENTIALS        ");
-                
+                System.out.println("\n\n          INVALID CREDENTIALS        ");
+                RunMe();
             }
         }
     }
@@ -118,10 +126,11 @@ public class EA {
         int choose = 0;
        while(choose != 5){
         System.out.println("\n\n");
-        System.out.println("+----------------------------------+");
-        System.out.println("|       WELCOME DEAR CUSTOMER      |");
-        System.out.println("+----------------------------------+");
-        System.out.println("|------What do you want to do?-----|");
+        System.out.println("|----------------------------------|");
+        System.out.println("+       WELCOME DEAR CUSTOMER      +");
+        System.out.println("|----------------------------------|");
+        System.out.println("+------What do you want to do?-----+");
+        System.out.println("|                                  |");
         System.out.println("+ 1. Show User Information         +");
         System.out.println("|                                  |");
         System.out.println("+ 2. Show Item List                +");
@@ -193,9 +202,7 @@ public class EA {
         System.out.println("+                                   +");
         System.out.println("+-----------------------------------+");
         System.out.print("Option: ");
-     //for(int i = 0; i<itemList.size(); i++){
-       // System.out.print("\n"+ i +"." + " " + itemList.get(i).getprodname() + " = " + itemList.get(i).getprice() + "\n");
-      //}
+    
       for(Items items: itemList)
       {
           System.out.println("\n" + items.getpid() 
