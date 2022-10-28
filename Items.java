@@ -3,7 +3,7 @@ package ecommerce.ea;
 public class Items 
 {
     
-    //KANI NADUGANG OR NAUSAB - andrew
+
     
     private int pid,price, stocks;
     private String prodname, status;
