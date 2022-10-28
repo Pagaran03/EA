@@ -10,8 +10,8 @@ import java.util.*;
  *   October 21,2022
  *
  *  Title of the Project:
- *n
-Ecommerce Website
+ *
+ *  Ecommerce Website
 */
 
 public class EA {
